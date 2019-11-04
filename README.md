@@ -1,3 +1,3 @@
 # elebender
-My elemental bender discord bot.
-ALL PROGRAMMING IS MINE AND ONLY MINE. ANY USE OF MY CODING WILL RESULT IN A BREAK IN THE COPYRIGHT ACT
+My discord bot's files for another application.
+Please don't use my work for yourself. Thank you! :D
