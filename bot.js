@@ -15,13 +15,13 @@ client.on('ready', () => {
  
 
 client.on('message', message => {
-    if message.content.startsWith(prefix) {
+    if message.content.startsWith(prefix) == true {
     message.content = message.content.toUpperCase();
     if (message.content === prefix + 'PING') {
 
        message.reply('pong');
 
-       } else if (message.content.startsWith(prefix + "LOGIN") === true && message.content != prefix + "LOGIN RED") {
+       } else if (message.content.startsWith(prefix + "LOGIN") == true && message.content != prefix + "LOGIN RED") {
         
            message.reply('invalid username')
            
