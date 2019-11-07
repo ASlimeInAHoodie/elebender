@@ -25,8 +25,9 @@ client.on('message', message => {
         
                //message.reply('invalid username');
                 client.sendMessage({
-                    to: message.channel,
-                    message: "Invalid Username"
+                    channel: message.channel,
+                    content: "Invalid Username",
+                    callback: error
                 });
            
         };
