@@ -15,7 +15,7 @@ client.on('ready', () => {
  
 
 client.on('message', message => {
-    //if message.content.startsWith(prefix) == true {
+    if (message.content.startsWith(prefix) == true) {
         msg = message.content.toUpperCase();
         if (msg === prefix + 'PING') {
 
@@ -30,12 +30,12 @@ client.on('message', message => {
                 });
            
         };
-    //};
+    };
 
 });
 
 client.on('message', function(user, userID, channelID, message, evt) {
-    if (msg.startsWith(prefix + "LOGIN") == true && msg.content != prefix + "LOGIN RED") {
+    if (message.content.startsWith(prefix + "LOGIN") == true && msg.content != prefix + "LOGIN RED") {
         
                //message.reply('invalid username');
                 client.sendMessage({
