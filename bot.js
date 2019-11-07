@@ -15,7 +15,7 @@ client.on('ready', () => {
  
 
 client.on('message', message => {
-    if message.content.startsWith(prefix) == true {
+    //if message.content.startsWith(prefix) == true {
         msg = message.content.toUpperCase();
         if (msg === prefix + 'PING') {
 
@@ -26,7 +26,7 @@ client.on('message', message => {
                message.reply('invalid username');
            
         };
-    };
+    //};
 
 });
 
