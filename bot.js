@@ -38,7 +38,7 @@ client.on('message', function(user, userID, channelID, message, evt) {
     if (msg.startsWith(prefix + "LOGIN") == true && msg.content != prefix + "LOGIN RED") {
         
                //message.reply('invalid username');
-                bot.sendMessage({
+                client.sendMessage({
                     to: channelID,
                     message: "Invalid Username"
                 });
