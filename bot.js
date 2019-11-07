@@ -34,20 +34,6 @@ client.on('message', message => {
 
 });
 
-client.on('message', function(user, userID, channelID, message, evt) {
-    msg = message.content.toUpperCase();
-    if (msg.startsWith(prefix + "LOGIN") == true && msg.content != prefix + "LOGIN RED") {
-        
-               //message.reply('invalid username');
-                client.sendMessage({
-                    to: channelID,
-                    message: "Invalid Username"
-                });
-           
-        };
-});
- 
-
 // THIS  MUST  BE  THIS  WAY
 
 client.login(process.env.BOT_TOKEN);
