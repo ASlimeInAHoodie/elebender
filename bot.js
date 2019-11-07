@@ -35,7 +35,8 @@ client.on('message', message => {
 });
 
 client.on('message', function(user, userID, channelID, message, evt) {
-    if (message.content.startsWith(prefix + "LOGIN") == true && msg.content != prefix + "LOGIN RED") {
+    msg = message.content.toUpperCase();
+    if (msg.startsWith(prefix + "LOGIN") == true && msg.content != prefix + "LOGIN RED") {
         
                //message.reply('invalid username');
                 client.sendMessage({
