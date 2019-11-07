@@ -24,10 +24,7 @@ client.on('message', message => {
            } else if (msg.startsWith(prefix + "LOGIN") == true && msg.content != prefix + "LOGIN RED") {
         
                //message.reply('invalid username');
-                sendMessage(
-                    message.channel,
-                    "Invalid Username"
-                );
+                client.message.send(author, "Invalid Username");
            
         };
     };
