@@ -21,7 +21,7 @@ client.on('message', message => {
 
         message.reply('pong');
 
-           } else if (msg.startsWith(prefix + "LOGIN") == true && msg.content != prefix + "LOGIN RED") {
+           } else if (msg.startsWith(prefix + "LOGIN") == true && msg != prefix + "LOGIN RED") {
         
                //message.reply('invalid username');
                 message.channel.send("Invalid Username");
