@@ -33,7 +33,7 @@ client.on('message', message => {
                     color: 3447003,
                     title: "Available Rolls:",
                     fields: [
-                        { name: "", value: "1d2\n1d4\n1d6\n1d8\n1d12\n1d20\n1d100", inline: true},
+                        { name: "Rolls:", value: "1d2\n1d4\n1d6\n1d8\n1d12\n1d20\n1d100", inline: true},
                     ]
                 }
             });
