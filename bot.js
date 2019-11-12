@@ -8,7 +8,7 @@ const {google} = require('googleapis');
 client.on('ready', () => {
 
     console.log('I am ready!');
-    client.user.setStatus('.help');
+    client.user.setActivity('.help');
 
 });
 
