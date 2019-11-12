@@ -31,10 +31,9 @@ client.on('message', message => {
         } else if (msg == prefix + 'ROLLS') {
             message.channel.send({embed: {
                     color: 3447003,
-                    title: "Test:",
+                    title: "Available Rolls:",
                     fields: [
-                        { name: "Test 1", value: "Line1\nLine2\nLine3", inline: true},
-                        { name: "Test 2", value: "AlsoLine1\nAlsoLine2\nAndLine3", inline: true}
+                        { name: "", value: "1d2\n1d4\n1d6\n1d8\n1d12\n1d20\n1d100", inline: true},
                     ]
                 }
             });
