@@ -5,11 +5,11 @@ const spreadsheetId = process.env.SHEETID;
 const readline = require('readline');
 const {google} = require('googleapis');
 
+client.user.setGame('.help');
 
 client.on('ready', () => {
 
     console.log('I am ready!');
-    client.user.setGame('.help')
 
 });
 
