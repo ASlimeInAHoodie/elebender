@@ -29,14 +29,15 @@ client.on('message', message => {
         } else if (msg == prefix + 'LOGIN RED') {
             message.reply(':slight_smile:');
         } else if (msg == prefix + 'ROLLS') {
-            message.reply('**Rolls Available:**');
-            message.reply('1d2');
-            message.reply('1d4');
-            message.reply('1d6');
-            message.reply('1d8');
-            message.reply('1d12');
-            message.reply('1d20');
-            message.reply('1d100');
+            message.channel.send({embed: {
+                    color: 3447003,
+                    title: "Test:",
+                    fields: [
+                        { name: "Test 1", value: "Line1\nLine2\nLine3", inline: true},
+                        { name: "Test 2", value: "AlsoLine1\nAlsoLine2\nAndLine3", inline: true}
+                    ]
+                }
+            });
             
         } else if (msg == prefix + '1D2') {
             message.reply('2');
