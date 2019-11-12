@@ -28,19 +28,19 @@ client.on('message', message => {
            
         } else if (msg == prefix + 'LOGIN RED') {
             message.reply(':slight_smile:');
-        } else if (msg == prefix + '1d2') {
+        } else if (msg == prefix + '1D2') {
             message.reply('2');
-        } else if (msg == prefix + '1d4') {
+        } else if (msg == prefix + '1D4') {
             message.reply('4');
-        } else if (msg == prefix + '1d6') {
+        } else if (msg == prefix + '1D6') {
             message.reply('5');
-        } else if (msg == prefix + '1d8') {
+        } else if (msg == prefix + '1D8') {
             message.reply('3');
-        } else if (msg == prefix + '1d12') {
+        } else if (msg == prefix + '1D12') {
             message.reply('3');
-        } else if (msg == prefix + '1d20') {
+        } else if (msg == prefix + '1D20') {
             message.reply('9');
-        } else if (msg == prefix + '1d100') {
+        } else if (msg == prefix + '1D100') {
             message.reply('10[] AE>{M( P(@)T ">G>:+ ');
             message.channel.send("ERROR");
         };
