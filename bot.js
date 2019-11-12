@@ -28,6 +28,16 @@ client.on('message', message => {
            
         } else if (msg == prefix + 'LOGIN RED') {
             message.reply(':slight_smile:');
+        } else if (msg == prefix + 'ROLLS') {
+            message.reply('**Rolls Available:**');
+            message.reply('1d2');
+            message.reply('1d4');
+            message.reply('1d6');
+            message.reply('1d8');
+            message.reply('1d12');
+            message.reply('1d20');
+            message.reply('1d100');
+            
         } else if (msg == prefix + '1D2') {
             message.reply('2');
         } else if (msg == prefix + '1D4') {
