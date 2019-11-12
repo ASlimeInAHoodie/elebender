@@ -7,7 +7,6 @@ const {google} = require('googleapis');
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setActivity('.help');
 });
 
  
