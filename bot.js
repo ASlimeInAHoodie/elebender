@@ -26,9 +26,9 @@ client.on('message', message => {
                     color: 3447003,
                     title: "Help",
                     fields: [
-                        { name: "Name", value: "Rolls\nHelp", inline: true},
-                        { name: "Description", value: "Shows all available rolls. /nShows this message", inline: true},
-                        { name: "Usage", value: ".rolls /n.help", inline: true},
+                        { name: "Name", value: "Rolls \nHelp", inline: true},
+                        { name: "Description", value: "Shows all available rolls. \nShows this message", inline: true},
+                        { name: "Usage", value: ".rolls \n.help", inline: true},
                     ]
                 }
             });
