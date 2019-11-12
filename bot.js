@@ -26,6 +26,23 @@ client.on('message', message => {
                //message.reply('invalid username');
                 message.channel.send("Invalid Username");
            
+        } else if (msg == prefix + 'LOGIN RED') {
+            message.reply(':slight_smile:');
+        } else if (msg == prefix + '1d2') {
+            message.reply('2');
+        } else if (msg == prefix + '1d4') {
+            message.reply('4');
+        } else if (msg == prefix + '1d6') {
+            message.reply('5');
+        } else if (msg == prefix + '1d8') {
+            message.reply('3');
+        } else if (msg == prefix + '1d12') {
+            message.reply('3');
+        } else if (msg == prefix + '1d20') {
+            message.reply('9');
+        } else if (msg == prefix + '1d100') {
+            message.reply('10[] AE>{M( P(@)T ">G>:+ ');
+            message.channel.send("ERROR");
         };
     };
 
