@@ -51,14 +51,14 @@ client.on('message', message => {
                 }
             });
         } else if (msg == prefix + '1D2') {
-            var choice = Math.floor((Math.random() * 2) + 1);
+            choice = Math.floor((Math.random() * 2) + 1);
             if choice == 1 {
                 message.reply('**2**');
             } else {
                 message.reply('2');
             }
         } else if (msg == prefix + '1D4') {
-            var choice = Math.floor((Math.random() * 4) + 1);
+            choice = Math.floor((Math.random() * 4) + 1);
             if choice == 1 {
                 message.reply('**4**');
             } else if choice == 2 {
@@ -69,7 +69,7 @@ client.on('message', message => {
                 message.reply('2');
             }
         } else if (msg == prefix + '1D6') {
-            var choice = Math.floor((Math.random() * 6) + 1);
+            choice = Math.floor((Math.random() * 6) + 1);
             if choice == 1 {
                 message.reply('**6**');
             } else if choice == 2 {
@@ -80,7 +80,7 @@ client.on('message', message => {
                 message.reply('HINT2.1: Login');
             }
         } else if (msg == prefix + '1D8') {
-            var choice = Math.floor((Math.random() * 8) + 1);
+            choice = Math.floor((Math.random() * 8) + 1);
             if choice == 1 {
                 message.reply('**8**');
             } else if choice == 2 {
