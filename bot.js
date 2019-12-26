@@ -52,42 +52,42 @@ client.on('message', message => {
             });
         } else if (msg == prefix + '1D2') {
             choice = Math.floor((Math.random() * 2) + 1);
-            if choice == 1 {
+            if (choice == 1) {
                 message.reply('**2**');
             } else {
                 message.reply('2');
             }
         } else if (msg == prefix + '1D4') {
             choice = Math.floor((Math.random() * 4) + 1);
-            if choice == 1 {
+            if (choice == 1) {
                 message.reply('**4**');
-            } else if choice == 2 {
+            } else if (choice == 2) {
                 message.reply('HINT1.1: ROLL');
-            } else if choice == 3 {
+            } else if (choice == 3) {
                 message.reply('HINT1.2: 1Dx');
             } else {
                 message.reply('2');
             }
         } else if (msg == prefix + '1D6') {
             choice = Math.floor((Math.random() * 6) + 1);
-            if choice == 1 {
+            if (choice == 1) {
                 message.reply('**6**');
-            } else if choice == 2 {
+            } else if (choice == 2) {
                 message.reply('HINT1.3: x = 100');
-            } else if choice == 3 {
+            } else if (choice == 3) {
                 message.reply('4');    
             } else {
                 message.reply('HINT2.1: Login');
             }
         } else if (msg == prefix + '1D8') {
             choice = Math.floor((Math.random() * 8) + 1);
-            if choice == 1 {
+            if (choice == 1) {
                 message.reply('**8**');
-            } else if choice == 2 {
+            } else if (choice == 2) {
                 message.reply('HINT2.3: Rxx');
-            } else if choice == 3 {
+            } else if (choice == 3) {
                 message.reply('3');
-            } else if choice == 4 {
+            } else if (choice == 4) {
                 message.reply('6')
             } else {
                 message.reply('HINT2.2: RGB');
