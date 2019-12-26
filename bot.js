@@ -55,7 +55,7 @@ client.on('message', message => {
             if (choice == 1) {
                 message.reply('**2**');
             } else {
-                message.reply('2');
+                message.reply('__1__');
             }
         } else if (msg == prefix + '1D4') {
             choice = Math.floor((Math.random() * 4) + 1);
@@ -91,13 +91,41 @@ client.on('message', message => {
                 message.reply('6')
             } else {
                 message.reply('HINT2.2: RGB');
-            }        } else if (msg == prefix + '1D12') {
-            message.reply('3');
+            }
+        } else if (msg == prefix + '1D12') {
+            choice = Math.floor((Math.random() * 12) + 1);
+            if (choice == 1) {
+                message.reply('**12**');
+            } else if (choice == 2) {
+                message.reply('__1__');
+            } else if (choice == 3) {
+                message.reply('2');
+            } else if (choice == 4) {
+                message.reply('3')
+            } else {
+                message.reply('6');
+            }
         } else if (msg == prefix + '1D20') {
-            message.reply('9');
+            choice = Math.floor((Math.random() * 20) + 1);
+            if (choice == 1) {
+                message.reply('**20**');
+            } else if (choice == 2) {
+                message.reply('__1__');
+            } else if (choice == 3) {
+                message.reply('5');
+            } else if (choice == 4) {
+                message.reply('10')
+            } else {
+                message.reply('15');
+            }
         } else if (msg == prefix + '1D100') {
-            message.reply('10[] AE>{M( P(@)T ">G>:+ ');
-            message.channel.send("ERROR-CODE: " + CODE1);
+            choice = Math.floor((Math.random() * 10) + 1);
+            if (choice == 1) {
+                message.channel.send("ERROR-CODE: " + CODE1);
+            } else {
+                message.reply('10[] AE>{M( P(@)T ">G>:+ ');
+            }
+            
             
             
         } else if (msg.startsWith(prefix + "LOGIN") == true && msg != prefix + "LOGIN RED") {
