@@ -4,6 +4,16 @@ const prefix = process.env.PREFIX;
 const spreadsheetId = process.env.SHEETID;
 const readline = require('readline');
 const {google} = require('googleapis');
+const CODE1 = process.env.CODE1;
+const CODE2 = process.env.CODE2;
+const CODE3 = process.env.CODE3;
+const CODE4 = process.env.CODE4;
+const CODE5 = process.env.CODE5;
+const CODE6 = process.env.CODE6;
+const CODE7 = process.env.CODE7;
+const CODE8 = process.env.CODE8;
+const CODE9 = process.env.CODE9;
+const CODE10 = process.env.CODE10;
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -54,7 +64,7 @@ client.on('message', message => {
             message.reply('9');
         } else if (msg == prefix + '1D100') {
             message.reply('10[] AE>{M( P(@)T ">G>:+ ');
-            message.channel.send("ERROR");
+            message.channel.send("ERROR-CODE: " + CODE1);
             
             
         } else if (msg.startsWith(prefix + "LOGIN") == true && msg != prefix + "LOGIN RED") {
