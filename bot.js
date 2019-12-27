@@ -154,6 +154,8 @@ client.on('message', message => {
             message.reply('**LOGGED OUT**');
             admin = false;
             login = "none";
+        } else if (msg == prefix + 'CODE2' && admin == true) {
+            message.reply(CODE2);
         };
     };
 
