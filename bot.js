@@ -14,11 +14,11 @@ const CODE7 = process.env.CODE7;
 const CODE8 = process.env.CODE8;
 const CODE9 = process.env.CODE9;
 const CODE10 = process.env.CODE10;
-def login = "none";
-def admin = False;
 
 client.on('ready', () => {
     console.log('I am ready!');
+    login = "none";
+    admin = False;
 });
 
  
