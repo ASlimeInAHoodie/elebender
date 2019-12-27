@@ -30,7 +30,7 @@ client.on('message', message => {
 
         message.reply('pong');
         } else if (msg == prefix + 'HELP') {
-            if (admin == True) {
+            if (admin == true) {
                 message.channel.send({embed: {
                     color: 3447003,
                     title: "Help",
@@ -148,11 +148,11 @@ client.on('message', message => {
         } else if (msg == prefix + 'LOGIN RED') {
             message.reply('**LOGGED IN AS: RED**');
             message.reply('Make sure to logout of your account after you have finished.');
-            admin = True;
+            admin = true;
             login = "RED";
-        } else if (msg == prefix + 'LOGOUT') {
+        } else if (msg == prefix + 'LOGOUT' && admin == true) {
             message.reply('**LOGGED OUT**');
-            admin = False;
+            admin = false;
             login = "none";
         };
     };
