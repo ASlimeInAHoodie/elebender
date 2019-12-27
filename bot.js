@@ -41,6 +41,7 @@ client.on('message', message => {
                     ]
                 }
             } else {
+                                     
             message.channel.send({embed: {
                     color: 3447003,
                     title: "Help",
@@ -52,6 +53,7 @@ client.on('message', message => {
                 }
             });
             }
+        };
             
             
             
