@@ -14,7 +14,7 @@ const CODE7 = process.env.CODE7;
 const CODE8 = process.env.CODE8;
 const CODE9 = process.env.CODE9;
 const CODE10 = process.env.CODE10;
-login = "";
+login = "none";
 admin = False;
 
 client.on('ready', () => {
@@ -152,7 +152,7 @@ client.on('message', message => {
         } else if (msg == prefix + 'LOGOUT') {
             message.reply('**LOGGED OUT**');
             admin = False;
-            login = "";
+            login = "none";
         };
     };
 
