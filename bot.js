@@ -14,6 +14,8 @@ const CODE7 = process.env.CODE7;
 const CODE8 = process.env.CODE8;
 const CODE9 = process.env.CODE9;
 const CODE10 = process.env.CODE10;
+login = "";
+admin = False;
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -28,6 +30,17 @@ client.on('message', message => {
 
         message.reply('pong');
         } else if (msg == prefix + 'HELP') {
+            if (admin == True) {
+                message.channel.send({embed: {
+                    color: 3447003,
+                    title: "Help",
+                    fields: [
+                        { name: "Name", value: "Rolls \nHelp \nLogout \nCode2 \nRiddle \nRiddleA \nHint \nAdd", inline: true},
+                        { name: "Description", value: "Shows all available rolls. \nShows this message. \nLogs out of the account you're using. \n:thinking: \nGives a fun riddle every time! \nAnswer the riddle. \nDesciption unavailable. \nRemoved", inline: true},
+                        { name: "Usage", value: ".rolls \n.help \nLogout \n.code2 \n.riddle \n.riddle a \n.hint \n.add", inline: true},
+                    ]
+                }
+            } else {
             message.channel.send({embed: {
                     color: 3447003,
                     title: "Help",
@@ -38,6 +51,7 @@ client.on('message', message => {
                     ]
                 }
             });
+            }
             
             
             
@@ -121,7 +135,7 @@ client.on('message', message => {
         } else if (msg == prefix + '1D100') {
             choice = Math.floor((Math.random() * 10) + 1);
             if (choice == 1) {
-                message.channel.send("ERROR-CODE: " + CODE1);
+                message.channel.send("ERROR-CODE: ||" + CODE1 + "||");
             } else {
                 message.reply('10[] AE>{M( P(@)T ">G>:+ ');
             }
@@ -129,13 +143,16 @@ client.on('message', message => {
             
             
         } else if (msg.startsWith(prefix + "LOGIN") == true && msg != prefix + "LOGIN RED") {
-        
-               //message.reply('invalid username');
                 message.channel.send("Invalid Username");
-           
         } else if (msg == prefix + 'LOGIN RED') {
-            message.reply(':slight_smile:');
-        
+            message.reply('**LOGGED IN AS: RED**');
+            message.reply('Make sure to logout of your account after you have finished.');
+            admin = True;
+            login = "RED";
+        } else if (msg == prefix + 'LOGOUT') {
+            message.reply('**LOGGED OUT**');
+            admin = False;
+            login = "";
         };
     };
 
