@@ -18,7 +18,7 @@ const CODE10 = process.env.CODE10;
 client.on('ready', () => {
     console.log('I am ready!');
     login = "none";
-    admin = False;
+    admin = false;
 });
 
  
