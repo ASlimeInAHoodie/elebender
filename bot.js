@@ -39,10 +39,9 @@ client.on('message', message => {
                         { name: "Description", value: "Shows all available rolls. \nShows this message. \nLogs out of the account you're using. \n:thinking: \nGives a fun riddle every time! \nAnswer the riddle. \nDesciption unavailable. \nRemoved", inline: true},
                         { name: "Usage", value: ".rolls \n.help \nLogout \n.code2 \n.riddle \n.riddle a \n.hint \n.add", inline: true},
                     ]
-                }
-            } else {
-                                     
-            message.channel.send({embed: {
+                });
+            } else {                     
+                message.channel.send({embed: {
                     color: 3447003,
                     title: "Help",
                     fields: [
@@ -52,7 +51,6 @@ client.on('message', message => {
                     ]
                 }
             });
-            }
         };
             
             
