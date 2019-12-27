@@ -40,6 +40,7 @@ client.on('message', message => {
                         { name: "Usage", value: ".rolls \n.help \nLogout \n.code2 \n.riddle \n.riddle a \n.hint \n.add", inline: true},
                     ]
                 });
+                                     }
             } else {                     
                 message.channel.send({embed: {
                     color: 3447003,
@@ -51,6 +52,7 @@ client.on('message', message => {
                     ]
                 }
             });
+            }
         };
             
             
